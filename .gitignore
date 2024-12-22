@@ -2,5 +2,9 @@
 node_modules
 =======
 node_modules/
+<<<<<<< HEAD
 !node_modules/node/node_modules/node-bin-darwin-arm64/bin/node!node_modules/node/node_modules/node-bin-darwin-arm64/bin/node
 >>>>>>> 60d5bd6 (Update .gitignore to include specific LFS-tracked files)
+=======
+!node_modules/node/node_modules/node-bin-darwin-arm64/bin/node
+>>>>>>> 395395b (Update .gitignore to include specific LFS-tracked files)
