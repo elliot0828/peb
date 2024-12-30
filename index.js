@@ -19,7 +19,8 @@ const client = new Client({
 const internal = require("stream");
 const { kill } = require("process");
 const { type } = require("os");
-
+const APIKEY =
+  "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlYTU4NzE5MC0xYmZlLTAxM2MtOGM0Mi0wNmEwODIyNTEzYWQiLCJpc3MiOiJnYW1lbG9ja2VyIiwiaWF0IjoxNjkxOTI4MDI2LCJwdWIiOiJibHVlaG9sZSIsInRpdGxlIjoicHViZyIsImFwcCI6Ii0yOTEyNDU0OC03OTVmLTQzYmItYmRlMi1mYjkxYjM3NWNhMmUifQ.Z8v6NPvr7ee_coJvrxJ6oIUsmD0GVCiOU-NIavOWCG8";
 client.once("ready", async () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
@@ -85,7 +86,7 @@ function player_API(interaction, obj) {
     {
       headers: {
         accept: "application/vnd.api+json",
-        Authorization: `Bearer ${process.env.APIKEY}`,
+        Authorization: `Bearer ${APIKEY}`,
       },
     }
   );
@@ -147,7 +148,7 @@ function get_normal(interaction, obj) {
     {
       headers: {
         accept: "application/vnd.api+json",
-        Authorization: `Bearer ${process.env.APIKEY}`,
+        Authorization: `Bearer ${APIKEY}`,
       },
     }
   );
@@ -168,7 +169,7 @@ function get_ranked(interaction, obj) {
     {
       headers: {
         accept: "application/vnd.api+json",
-        Authorization: `Bearer ${process.env.APIKEY}`,
+        Authorization: `Bearer ${APIKEY}`,
       },
     }
   );
@@ -309,11 +310,11 @@ function normal_data(interaction, data, obj) {
 }
 
 function tournament_API(interaction) {
-  console.log(process.env.APIKEY);
+  console.log(APIKEY);
   let data = fetch(`https://api.pubg.com/tournaments/`, {
     headers: {
       accept: "application/vnd.api+json",
-      Authorization: `Bearer ${process.env.APIKEY}`,
+      Authorization: `Bearer ${APIKEY}`,
     },
   });
   data
