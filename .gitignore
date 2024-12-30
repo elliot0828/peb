@@ -13,3 +13,4 @@ node_modules/
 # 예를 들어, 아래와 같이 파일을 LFS로 추적할 수 있습니다
 !node_modules/node/node_modules/node-bin-darwin-arm64/bin/node
 .env
+.env
