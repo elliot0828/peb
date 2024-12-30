@@ -2,8 +2,9 @@
 *.log
 
 # 환경 변수 파일
-esportsbot.pem
 .env
+esportsbot.pem
+
 # Node.js 디렉토리
 node_modules/
 
