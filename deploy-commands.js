@@ -4,8 +4,7 @@ const { Routes } = require("discord-api-types/v9");
 require("dotenv").config();
 
 const clientId = "1302962718017454171"; // Discord 애플리케이션 ID
-const token =
-  "MTMwMjk2MjcxODAxNzQ1NDE3MQ.GvDwjo.m7L1HXHkHez4GVESn4-uf4EIhHGGcs6yNM2sFw"; // 봇 토큰
+const token = process.env.DISCORD_TOKEN;
 
 // Slash 명령어 정의
 const commands = [
