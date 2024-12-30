@@ -380,4 +380,6 @@ async function render_tournaments(interaction, data) {
   });
 }
 
-client.login(process.env.DISCORD_TOKEN);
+client.login(
+  "MTMwMjk2MjcxODAxNzQ1NDE3MQ.GvDwjo.m7L1HXHkHez4GVESn4-uf4EIhHGGcs6yNM2sFw"
+);
