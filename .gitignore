@@ -1,17 +1,11 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-node_modules
-=======
-node_modules/
-<<<<<<< HEAD
-!node_modules/node/node_modules/node-bin-darwin-arm64/bin/node!node_modules/node/node_modules/node-bin-darwin-arm64/bin/node
->>>>>>> 60d5bd6 (Update .gitignore to include specific LFS-tracked files)
-=======
-!node_modules/node/node_modules/node-bin-darwin-arm64/bin/node
->>>>>>> 395395b (Update .gitignore to include specific LFS-tracked files)
-=======
-# .gitignore
+# 로그 파일
 *.log
-node_modules/
+
+# 환경 변수 파일
 .env
->>>>>>> 4baf8e9 (Initial commit)
+
+# Node.js 디렉토리
+node_modules/
+
+# 특정 파일 제외 (예외 규칙)
+!node_modules/node/node_modules/node-bin-darwin-arm64/bin/node
