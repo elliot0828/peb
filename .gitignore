@@ -7,5 +7,6 @@
 # Node.js 디렉토리
 node_modules/
 
-# 특정 파일 제외 (예외 규칙)
-!node_modules/node/node_modules/node-bin-darwin-arm64/bin/node
+# Git LFS로 추적해야 할 대용량 파일 추가 (선택 사항)
+# 예를 들어, 아래와 같이 파일을 LFS로 추적할 수 있습니다
+ !node_modules/node/node_modules/node-bin-darwin-arm64/bin/node
